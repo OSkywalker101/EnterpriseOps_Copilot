@@ -1,0 +1,30 @@
+-- RLS Policies (minimal for Neon)
+ALTER TABLE profiles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE suppliers ENABLE ROW LEVEL SECURITY;
+ALTER TABLE products ENABLE ROW LEVEL SECURITY;
+ALTER TABLE warehouses ENABLE ROW LEVEL SECURITY;
+ALTER TABLE purchase_orders ENABLE ROW LEVEL SECURITY;
+ALTER TABLE purchase_order_lines ENABLE ROW LEVEL SECURITY;
+ALTER TABLE inventory_balances ENABLE ROW LEVEL SECURITY;
+ALTER TABLE goods_receipts ENABLE ROW LEVEL SECURITY;
+ALTER TABLE goods_receipt_lines ENABLE ROW LEVEL SECURITY;
+ALTER TABLE supplier_invoices ENABLE ROW LEVEL SECURITY;
+ALTER TABLE supplier_invoice_lines ENABLE ROW LEVEL SECURITY;
+ALTER TABLE conversations ENABLE ROW LEVEL SECURITY;
+ALTER TABLE conversation_messages ENABLE ROW LEVEL SECURITY;
+ALTER TABLE audit_events ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "allow_all" ON profiles FOR ALL USING (true);
+CREATE POLICY "allow_all" ON suppliers FOR ALL USING (true);
+CREATE POLICY "allow_all" ON products FOR ALL USING (true);
+CREATE POLICY "allow_all" ON warehouses FOR ALL USING (true);
+CREATE POLICY "allow_all" ON purchase_orders FOR ALL USING (true);
+CREATE POLICY "allow_all" ON purchase_order_lines FOR ALL USING (true);
+CREATE POLICY "allow_all" ON inventory_balances FOR ALL USING (true);
+CREATE POLICY "allow_all" ON goods_receipts FOR ALL USING (true);
+CREATE POLICY "allow_all" ON goods_receipt_lines FOR ALL USING (true);
+CREATE POLICY "allow_all" ON supplier_invoices FOR ALL USING (true);
+CREATE POLICY "allow_all" ON supplier_invoice_lines FOR ALL USING (true);
+CREATE POLICY "allow_all" ON conversations FOR ALL USING (true);
+CREATE POLICY "allow_all" ON conversation_messages FOR ALL USING (true);
+CREATE POLICY "allow_all" ON audit_events FOR ALL USING (true);

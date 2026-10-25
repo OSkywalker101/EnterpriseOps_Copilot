@@ -1,0 +1,1 @@
+﻿import { ChatInterface } from '@/components/chat/ChatInterface';export function ChatPage() {  return (    <div className="h-[calc(100vh-8rem)]">      <ChatInterface />    </div>  );}

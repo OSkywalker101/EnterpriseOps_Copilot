@@ -1,0 +1,1 @@
+﻿import { ProcurementDashboard } from '@/components/dashboard/ProcurementDashboard';import { InventoryDashboard } from '@/components/dashboard/InventoryDashboard';export function DashboardPage() {  return (    <div className="space-y-6">      <ProcurementDashboard />      <InventoryDashboard />    </div>  );}
